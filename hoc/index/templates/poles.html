@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load materializecss %}
+
+{% block content %}
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Les Poles</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Blabla</h5>
+        </div>
+
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'img/group.jpg' %}" alt="Unsplashed background img 2"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+          <div class="row">
+            <h2 class="center-align">Branlette</h1>
+
+            <div class="col s4">
+              
+                    <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{% static 'img/major.jpg' %}">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Président<i class="mdi-navigation-more-vert right"></i></span>
+                        <!--<p><a href="#">This is a link</a></p>-->
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Clément Villain<i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+
+
+
+            </div>
+          </div>
+
+    </div>
+  </div>
+
+
+{% endblock content %}
+
+
+{% block script %}
+{% endblock script %}
+
+   
