@@ -18,8 +18,8 @@
     <!--  Android 5 Chrome Color-->
     <meta name="theme-color" content="#EE6E73">
     <!-- CSS-->
-    <link href="css/prism.css" rel="stylesheet">
-    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{% static 'css/prism.css' %}" rel="stylesheet">
+    <link href="{% static 'css/ghpages-materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
     <script>
       window.liveSettings = {
@@ -139,10 +139,10 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
     </script>
-    <script src="js/jquery.timeago.min.js"></script>  
+    <script src="{% static 'js/jquery.timeago.min.js' %}"></script>  
 
-    <script src="bin/materialize.js"></script>
-    <script src="js/init.js"></script>
+    <script src="{% static 'js/materialize.js' %}"></script>
+    <script src="{% static 'js/init.js' %}"></script>
 
 
 
