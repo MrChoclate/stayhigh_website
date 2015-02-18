@@ -22,6 +22,6 @@ urlpatterns = patterns('',
 
     url(r'^challenge/$', ChallengeCreate.as_view(template_name="challenges_new.html"), name='challenge'),
 
-    url(r'^thanks/$', TemplateView.as_view(template_name="thanks.html"), name='thanks'),
+    url(r'^thanks/$', 'index.views.thanks', name='thanks'),
 
 )
