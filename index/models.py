@@ -5,4 +5,3 @@ class Challenge(models.Model):
     last_name = models.CharField(max_length=30, blank=True)
     mail = models.EmailField(blank=True)
     content = models.TextField()
-    
