@@ -38,14 +38,12 @@
 
             <div id="test1" class="col s12">
               {% for challenge in challenges %}
-                <li>{{ challenge.first_name }}{{ challenge.last_name }}{{ challenge.content }}</li>
+                <li>{{ challenge.first_name }} {{ challenge.last_name }} {{ challenge.content }}</li>
 
-              {% empty %}
-              <h1>Lol</h1>
+              
               {% endfor %}
-
-
-            Test 1</div>
+            </div>
+            
             <div id="test2" class="col s12">Test 2</div>
             <div id="test3" class="col s12">Test 3</div>
             <div id="test4" class="col s12">Test 4</div>

@@ -9,8 +9,11 @@ from django.core.urlresolvers import reverse_lazy
 class ChallengeCreate(CreateView):
     model = Challenge
     fields = ['first_name', 'last_name', 'mail', 'content']
+    success_url = '/thanks/'
 
 
 class ChallengesList(ListView):
     model = Challenge
     context_object_name = 'challenges'
+    fields = ['first_name', 'last_name', 'mail', 'content']
+    
