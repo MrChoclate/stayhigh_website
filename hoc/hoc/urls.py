@@ -15,6 +15,9 @@ urlpatterns = patterns('',
 
     url(r'^$', TemplateView.as_view(template_name="index.html"), name='index'),
 
+    url(r'^poles$', TemplateView.as_view(template_name="poles.html"), name='poles'),
+
+
     url(r'^challenges/$', ChallengesList.as_view(template_name="challenges.html"), name='challenges'),
 
     url(r'^challenge/$', ChallengeCreate.as_view(template_name="challenges_new.html"), name='challenge'),
