@@ -8,3 +8,4 @@ index/migrations/*
 *.sublime-workspace
 *~
 media/*
+*.sqlite3
