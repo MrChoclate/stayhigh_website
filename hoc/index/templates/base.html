@@ -72,5 +72,13 @@
   {% block script %}
   {% endblock script %}
 
+  {% if messages %}
+  <script type="text/javascript">
+    {% for message in messages %}
+      toast('{{ message }}', 4000, 'rounded');
+    {% endfor %}
+  </script>
+  {% endif %}
+
   </body>
 </html>
