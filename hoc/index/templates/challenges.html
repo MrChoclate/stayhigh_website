@@ -42,7 +42,7 @@
 
                     {% for challenge in challenges %}
                     {% if challenge.type == 'V' %}
-                    <li class="collection-item">{{challenge.content}}</li>
+                    <li class="collection-item">{{challenge.content}} par {{challenge.first_name}} {{challenge.last_name}}</li>
                     {% endif %}
                     {% endfor %}
                   </ul>
@@ -57,7 +57,7 @@
 
                   {% for challenge in challenges %}
                   {% if challenge.type == 'R' %}
-                  <li class="collection-item">{{challenge.content}}</li>
+                  <li class="collection-item">{{challenge.content}} par {{challenge.first_name}} {{challenge.last_name}}</li>
                   {% endif %}
                   {% endfor %}
                   </ul>
@@ -69,7 +69,7 @@
 
                   {% for challenge in challenges %}
                   {% if challenge.type == 'P' %}
-                  <li class="collection-item">{{challenge.content}}</li>
+                  <li class="collection-item">{{challenge.content}} par {{challenge.first_name}} {{challenge.last_name}}</li>
                   {% endif %}
                   {% endfor %}
               </ul>
@@ -81,8 +81,8 @@
                   <li class="collection-header"><h4 class="center-align">Non lus</h4></li>
 
                   {% for challenge in challenges %}
-                  {% if challenge.type == 'P' %}
-                  <li class="collection-item">{{challenge.content}}</li>
+                  {% if challenge.type == 'N' %}
+                  <li class="collection-item">{{challenge.content}} par {{challenge.first_name}} {{challenge.last_name}}</li>
                   {% endif %}
                   {% endfor %}
               </ul>
