@@ -8,13 +8,16 @@
   <title>Parallax Template - Materialize</title>
 
   <!-- CSS  -->
-  <link href="{% static 'plugin/parallax-template/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="{% static 'plugin/parallax-template/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static 'plugin/parallaxtemplate/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static 'plugin/parallaxtemplate/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 </head>
 <body>
   <nav class="white" role="navigation">
     <div class="container">
-      <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo"><img src="{% static 'img/logo.png' %}" height="64px"/></a>
+      <div class="nav-wrapper"><a id="logo-container" href="{% url 'index' %}" class="brand-logo"><img src="{% static 'img/logo.png' %}" height="64px"/></a>
         <ul class="right">
 
           <li><a href="#">Pôles</a></li>
@@ -76,9 +79,8 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="{% static 'plugin/parallax-template/js/materialize.js' %}"></script>
-  <script src="{% static 'plugin/parallax-template/js/init.js' %}"></script>
+  <script src="{% static 'plugin/parallaxtemplate/js/materialize.js' %}"></script>
+  <script src="{% static 'plugin/parallaxtemplate/js/init.js' %}"></script>
 
   </body>
 </html>
