@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block content %}
-  <div id="index-banner" class="parallax-container">
+  <div id="index-banner" class="parallax-container index " data-vide-bg="{% static 'vid/v' %}" data-vide-options="loop: false, muted: false, position: 0% 0%">
     <div class="section pad">
       <div class="container">
 
@@ -23,7 +23,7 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="{% static 'img/3.jpg' %}" alt="Unsplashed background img 2"></div>
+    <!--<div class="parallax"><img src="{% static 'img/3.jpg' %}" alt="Unsplashed background img 2"></div>-->
   </div>
 
 <div class="relative">
@@ -105,6 +105,8 @@
 
 
 {% block script %}
+<script src="{% static 'plugin/Vide-0.3.0/dist/jquery.vide.min.js' %}"></script>
+
 {% endblock %}
 
    

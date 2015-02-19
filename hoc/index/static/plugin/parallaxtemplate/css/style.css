@@ -109,3 +109,7 @@ i.rounded{
   border : 2px solid white;
   border-radius: 50%;
 }
+
+#index-banner.index{
+  padding: 50px 0 !important;
+}
