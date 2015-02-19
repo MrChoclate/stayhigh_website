@@ -6,6 +6,10 @@
  * Made By MaterializeCSS.com
  */
 
+ body{
+  background-color: #EDEDF2;
+ }
+
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -65,4 +69,43 @@ nav .brand-logo{
 
 nav .brand-logo:hover{
   margin-top: 5px;
+}
+
+.hr_index{
+  height: 3px;
+  margin: 0px 10%;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.bold
+{
+  font-weight: 500;
+}
+
+
+.pad
+{
+  padding: 70px 0;
+}
+
+.scroll-down
+{
+  position: absolute;
+  top: -20px;
+  width: 100%;
+}
+
+.relative
+{
+  position: relative;
+}
+
+i.rounded{
+  font-size: 100px;
+  padding: 20px;
+  border : 2px solid white;
+  border-radius: 50%;
 }
