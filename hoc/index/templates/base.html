@@ -46,24 +46,18 @@
 {% block content %}
 {% endblock content %}
 
-  <footer class="page-footer blue">
+  <footer class="page-footer grey darken-4">
     <div class="container">
       <div class="row valign-wrapper">
-        <div class="col l6 s12">
-          <h5 class="white-text">En quelques mots...</h5>
-          <p class="grey-text text-lighten-4">Nous sommes 29 personnes, bwef !</p>
-        </div>
-        <div class="col l3 center-align">
-          <a href="http://www.facebook.com"><img src="{% static 'img/facebook.png' %}" width="100px"></a>
-        </div>
-        <div class="col l3 center-align">
-          <a href="http://www.twitter.com"><img src="{% static 'img/twitter.png' %}" width="100px"></a>
+        <div class="col center s12">
+          <img src="{% static 'img/logo.png' %}" width="200">
         </div>
       </div>
     </div>
+
     <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      <div class="container center">
+      Facebook et twitter
       </div>
     </div>
   </footer>
@@ -72,6 +66,13 @@
   <!--  Scripts-->
   <script src="{% static 'plugin/parallaxtemplate/js/materialize.js' %}"></script>
   <script src="{% static 'plugin/parallaxtemplate/js/init.js' %}"></script>
+
+  <script src="{% static 'plugin/scrollReveal.js-master/dist/scrollReveal.min.js' %}"></script>
+  <script>
+
+    window.sr = new scrollReveal();
+
+  </script>
 
   {% block script %}
   {% endblock script %}

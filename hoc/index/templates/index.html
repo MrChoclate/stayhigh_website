@@ -3,23 +3,30 @@
 
 {% block content %}
   <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
+    <div class="section pad">
       <div class="container">
-        <br><br>
-        <h1 class="header center light">Stay High</h1>
-        <div class="hr_index blue"></div>
-        <div class="row center">
-          <h5 class="header col s12 bold">Wake up ! Suit up ! Party !</h5>
+
+        
+        <div class="row">
+          <div class="col m8">
+          <h1 class="header light" data-sr>Stay High</h1>
+          <!--<div class="hr_index blue"></div>-->
+          <h5 class="header bold" data-sr>Wake up ! Suit up ! Party !</h5>
+          </div>
+
+          <div class="col m4 center">
+          <img src="{% static 'img/logo.png' %}" width="200px">
+          </div>
         </div>
        
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="{% static 'img/group2.min.jpg' %}" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="{% static 'img/3.jpg' %}" alt="Unsplashed background img 2"></div>
   </div>
 
-<div class="blue relative">
+<div class="relative">
    <div class="center scroll-down row">
           <a class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-hardware-keyboard-arrow-down"></i></a>
     </div>
@@ -29,19 +36,14 @@
     <div class="section pad">
 
 
-      <div class="row white-text">
+      <div class="row">
 
-        <div class="col s12 m8 ">
-        <h3>We love you biatch!</h3>
-        <p class="flow-text"> We get to work on those ideas and projects we really want to work on, fueled by developers, designers and project managers we get to have a blast while crafting wicked cool products. </p>
+        <div class="col s12 m8 offset-m2 center">
+        <!--<i class="mdi-image-flash-on rounded"></i>-->
+        <h3 class="blue-text" data-sr>We love you biatch!</h3>
+        <p class="flow-text" data-sr> We get to work on those ideas and projects we really want to work on, fueled by developers, designers and project managers we get to have a blast while crafting wicked cool products. </p>
         <a class="waves-effect waves-light btn-large"><i class="mdi-image-camera left"></i>Voir l'équipe</a>
 
-        </div>
-
-        <div class="col s12 m4 center">
-        <div class="pad">
-        <i class="mdi-image-flash-on rounded"></i>
-        </div>
         </div>
 
       </div>
@@ -58,24 +60,31 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">Petite soirée posée... #OKLM</h5>
+          <h3 class="header col s12 light">Nous pouvons relever vos défis !</h3>
+          <a class="waves-effect waves-light btn-large red"><i class="mdi-action-thumb-up right"></i>Les défis</a>
+
+
         </div>
       </div>
     </div>
 
-    <div class="parallax"><img src="{% static 'img/prepa.jpg' %}" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="{% static 'img/group2.min.jpg' %}" alt="Unsplashed background img 2"></div>
 
   </div>
 
   <div class="container">
     <div class="section">
-      <div class="row">
-        <div class="col s12 center blue-text">
 
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+
+      <div class="row">
+        <div class="col s12 m8 offset-m2">
+          <div class="card-panel center">
+              <h4 class="blue-text" data-sr>Contact Us</h4>
+              <p class="light" data-sr>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          </div>
         </div>
       </div>
+
 
     </div>
   </div>
@@ -93,5 +102,9 @@
     <div class="parallax"><img src="{% static 'img/moquette.jpg' %}" alt="Unsplashed background img 3"></div>
   </div>
 {% endblock content %}
+
+
+{% block script %}
+{% endblock %}
 
    
