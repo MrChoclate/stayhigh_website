@@ -23,8 +23,8 @@
   <nav class="white" role="navigation">
     <div class="container">
       <div class="nav-wrapper"><a id="logo-container" href="{% url 'index' %}" class="brand-logo"><img src="{% static 'img/logo.png' %}" height="90px"/></a>
-        <ul class="right">
 
+        <ul class="right hide-on-med-and-down">
           <li><a href="{% url 'poles' %}">Pôles</a></li>
           <li><a href="#">Voyages</a></li>
           <li><a href="#">Sponsors</a></li>
@@ -32,12 +32,14 @@
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
+          <li class="logo"><a href="/" class="center mobile-logo  bold">Stay High</a>
+          </li>
           <li><a href="#">Pôles</a></li>
           <li><a href="#">Voyages</a></li>
           <li><a href="#">Sponsors</a></li>
           <li><a href="{% url 'challenges' %}">Défis</a></li>
         </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse blue-text"><i class="mdi-navigation-menu"></i></a>
       </div>
     </div>
   </nav>
