@@ -52,3 +52,17 @@ footer.page-footer {
 #index-banner.challenges{
   background: url('../../../img/challenges.png') no-repeat center center transparent;
 }*/
+
+nav .brand-logo{
+  margin-top: 15px;
+  -webkit-transition:  all 0.3s ease-in-out 0s;
+  -moz-transition:  all 0.3s ease-in-out 0s;
+  -o-transition:  all 0.3s ease-in-out 0s;
+  transition:  all 0.3s ease-in-out 0s;
+  z-index: 1;
+}
+
+
+nav .brand-logo:hover{
+  margin-top: 5px;
+}
