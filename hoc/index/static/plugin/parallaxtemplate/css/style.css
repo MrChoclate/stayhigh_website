@@ -73,13 +73,36 @@ nav {
   z-index: 1005;
 }
 
-@media only screen and (max-width : 601px) {
-  nav{
+nav .brand-logo{
+  opacity:1;
+  margin-top: 15px;
+  -webkit-transition:  all 0.3s ease-in-out 0s;
+  -moz-transition:  all 0.3s ease-in-out 0s;
+  -o-transition:  all 0.3s ease-in-out 0s;
+  transition:  all 0.3s ease-in-out 0s;
+  z-index: 1;
+}
+
+
+nav .brand-logo:hover{
+  margin-top: 5px;
+}
+
+@media only screen and (max-width : 992px) {
+  nav {
     position: relative;
   }
 
   body {
     margin-top: 0;
+  }
+
+  nav .brand-logo {
+    margin-top : 67px;
+  }
+
+  nav .brand-logo:hover {
+    margin-top : 62px;
   }
 }
 
@@ -98,20 +121,7 @@ footer.page-footer {
   background: url('../../../img/challenges.png') no-repeat center center transparent;
 }*/
 
-nav .brand-logo{
-  opacity:1;
-  margin-top: 15px;
-  -webkit-transition:  all 0.3s ease-in-out 0s;
-  -moz-transition:  all 0.3s ease-in-out 0s;
-  -o-transition:  all 0.3s ease-in-out 0s;
-  transition:  all 0.3s ease-in-out 0s;
-  z-index: 1;
-}
 
-
-nav .brand-logo:hover{
-  margin-top: 5px;
-}
 
 .hr_index{
   height: 3px;
@@ -178,4 +188,14 @@ i.rounded{
 
 ul.side-nav {
   height : auto;
+}
+
+.parallax img {
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+
+nav{
+  overflow: visible;
 }
