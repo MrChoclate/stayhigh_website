@@ -9,6 +9,7 @@
  body{
   background-color: #EDEDF2;
   margin-top: 60px;
+  margin-bottom : 282px;
  }
 
 nav ul a,
@@ -112,8 +113,26 @@ nav .brand-logo:hover{
   padding: 0 15px;
 }
 
+
+
 footer.page-footer {
   margin: 0;
+}
+
+.content{
+  position:relative;
+  z-index:1;
+  background-color: #EDEDF2;
+  -webkit-box-shadow: 0px 5px 10px black;
+-moz-box-shadow: 0px 5px 10px black;
+box-shadow: 0px 5px 10px black;
+}
+
+footer {
+position: fixed;
+bottom: 0px;
+width: 100%;
+z-index:0;
 }
 
 /*
