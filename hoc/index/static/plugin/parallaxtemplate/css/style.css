@@ -8,6 +8,7 @@
 
  body{
   background-color: #EDEDF2;
+  margin-top: 60px;
  }
 
 nav ul a,
@@ -44,6 +45,46 @@ p {
 }
 
 
+.headroom {
+    -webkit-transition: -webkit-transform 200ms linear;
+            transition: transform 200ms linear;
+}
+.headroom--pinned {
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+}
+.headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+
+
+.headroom--unpinned .brand-logo {
+  opacity : 0;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0;
+  z-index: 1005;
+}
+
+@media only screen and (max-width : 601px) {
+  nav{
+    position: relative;
+  }
+
+  body {
+    margin-top: 0;
+  }
+}
+
+
+
 .icon-block {
   padding: 0 15px;
 }
@@ -58,6 +99,7 @@ footer.page-footer {
 }*/
 
 nav .brand-logo{
+  opacity:1;
   margin-top: 15px;
   -webkit-transition:  all 0.3s ease-in-out 0s;
   -moz-transition:  all 0.3s ease-in-out 0s;
@@ -120,4 +162,20 @@ i.rounded{
   color: black;
   padding: 20px 0;
   border-bottom: 1px solid grey;
+}
+
+
+.parallax-container.voyages
+{
+  background: url('../../../img/tree.png') repeat-x scroll center 100% transparent;
+}
+
+.white
+{
+  background-color: white;
+}
+
+
+ul.side-nav {
+  height : auto;
 }

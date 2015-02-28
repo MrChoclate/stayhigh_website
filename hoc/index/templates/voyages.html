@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load materializecss %}
+
+{% block content %}
+  <div id="index-banner" class="parallax-container voyages">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text">Les voyages</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Partez à l'aventure !</h5>
+        </div>
+
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'img/3.jpg' %}" alt="Unsplashed background img 2"></div>
+  </div>
+
+
+  <div class="container">
+        <div class="card" class="white">
+          <div class="card-content">
+            <h2 class="center">WE d'intégration</h2>
+            <div class="row">
+
+              <div class="col m5">
+                <img class="materialboxed responsive-img" data-caption="A picture of some deer and tons of trees" width="100%" src="https://d13yacurqjgara.cloudfront.net/users/189524/screenshots/1850831/beachscene_800x600_dribbble.gif">
+              </div>
+              <div class="col m7">
+                <p>lolilol</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" class="white">
+          <div class="card-content">
+            <h2 class="center">Semaine au ski</h2>
+            <div class="row">
+
+              <div class="col m7">
+                <p>lolilol</p>
+              </div>
+              <div class="col m5">
+                <img class="materialboxed responsive-img" data-caption="A picture of some deer and tons of trees" width="100%" src="https://d13yacurqjgara.cloudfront.net/users/189524/screenshots/1850831/beachscene_800x600_dribbble.gif">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  </div>
+
+
+{% endblock content %}
+
+
+{% block script %}
+{% endblock script %}

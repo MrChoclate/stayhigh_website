@@ -6,7 +6,7 @@
     <div class="section pad">
       <div class="container">
 
-        
+
         <div class="row">
           <div class="col m8">
           <h1 class="header light" data-sr>Stay High</h1>
@@ -15,10 +15,10 @@
           </div>
 
           <div class="col m4 center hide-on-med-and-down">
-          <img src="{% static 'img/logo.png' %}" width="200px">
+          <img src="{% static 'img/logo_med.png' %}" width="200px">
           </div>
         </div>
-       
+
         <br><br>
 
       </div>
@@ -28,12 +28,12 @@
 
 <div class="relative">
    <div class="center scroll-down row">
-          <a class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-hardware-keyboard-arrow-down"></i></a>
+          <a class="btn-floating btn-large waves-effect waves-light red scrollAnchor"><i class="mdi-hardware-keyboard-arrow-down"></i></a>
     </div>
 
 
   <div class="container">
-    <div class="section pad">
+    <div class="section pad" id="scrollTo">
 
 
       <div class="row">
@@ -42,15 +42,15 @@
         <!--<i class="mdi-image-flash-on rounded"></i>-->
         <h3 class="blue-text" data-sr>We love you biatch!</h3>
         <p class="flow-text" data-sr> We get to work on those ideas and projects we really want to work on, fueled by developers, designers and project managers we get to have a blast while crafting wicked cool products. </p>
-        <a class="waves-effect waves-light btn-large"><i class="mdi-image-camera left"></i>Voir l'équipe</a>
+        <a class="waves-effect waves-light btn-large" href="{% url 'poles' %}"><i class="mdi-image-camera left"></i>Voir l'équipe</a>
 
         </div>
 
       </div>
-            
+
 
       <!--   Icon Section   -->
-      
+
 
     </div>
   </div>
@@ -61,7 +61,7 @@
       <div class="container">
         <div class="row center">
           <h3 class="header col s12 light">Nous pouvons relever vos défis !</h3>
-          <a class="waves-effect waves-light btn-large red"><i class="mdi-action-thumb-up right"></i>Les défis</a>
+          <a class="waves-effect waves-light btn-large red" href="{% url 'challenges' %}"><i class="mdi-action-thumb-up right"></i>Les défis</a>
 
 
         </div>
@@ -99,7 +99,7 @@
       </div>
     </div>
 
-    <div class="parallax"><img src="{% static 'img/moquette.jpg' %}" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="{% static 'img/moquette.min.jpg' %}" alt="Unsplashed background img 3"></div>
   </div>
 {% endblock content %}
 
@@ -107,6 +107,13 @@
 {% block script %}
 <script src="{% static 'plugin/Vide-0.3.0/dist/jquery.vide.min.js' %}"></script>
 
+<script>
+//Click event to scroll to
+$('.scrollAnchor').click(function(){
+  $('html, body').animate({
+                  scrollTop:$('#scrollTo').offset().top
+              }, 'slow');
+  return true;
+});
+</script>
 {% endblock %}
-
-   
