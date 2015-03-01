@@ -120,6 +120,10 @@ nav .brand-logo:hover{
 }
 
 
+#sidenav-overlay {
+  z-index:990;
+}
+
 
 .icon-block {
   padding: 0 15px;
