@@ -218,3 +218,8 @@ ul.side-nav {
 nav{
   overflow: visible;
 }
+
+
+#skrollr-body {
+  background:url('../../../img/bird_custom.png') repeat fixed;
+}
