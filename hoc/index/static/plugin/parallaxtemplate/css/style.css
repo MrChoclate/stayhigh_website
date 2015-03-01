@@ -71,12 +71,32 @@ nav {
   top: 0px;
   right: 0px;
   left: 0;
-  z-index: 1005;
+  z-index: 992;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  text-transform : uppercase;
+  color: black !important;
+}
+
+
+nav ul a {
+    padding: 10px 15px;
+    display: inline;
+    color: black;
+}
+
+nav ul li:hover {
+    background-color: transparent;
+
+}
+
+nav ul a.active {
+    border: 3px solid black;
 }
 
 nav .brand-logo{
   opacity:1;
-  margin-top: 15px;
+  margin-top: 67px;
   -webkit-transition:  all 0.3s ease-in-out 0s;
   -moz-transition:  all 0.3s ease-in-out 0s;
   -o-transition:  all 0.3s ease-in-out 0s;
@@ -86,7 +106,7 @@ nav .brand-logo{
 
 
 nav .brand-logo:hover{
-  margin-top: 5px;
+  margin-top: 62px;
 }
 
 @media only screen and (max-width : 992px) {
@@ -96,14 +116,6 @@ nav .brand-logo:hover{
 
   body {
     margin-top: 0;
-  }
-
-  nav .brand-logo {
-    margin-top : 67px;
-  }
-
-  nav .brand-logo:hover {
-    margin-top : 62px;
   }
 }
 

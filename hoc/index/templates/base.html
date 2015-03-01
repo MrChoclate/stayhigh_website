@@ -1,7 +1,7 @@
 {% load staticfiles %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
@@ -10,6 +10,7 @@
 
   <!-- CSS  -->
   <link href="{% static 'plugin/materialize-0.95.3/dist/css/materialize.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
   <link href="{% static 'plugin/parallaxtemplate/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="{% static 'plugin/pace/index.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
 
@@ -23,13 +24,15 @@
     <div class="container">
       <div class="nav-wrapper">
 
-        <a id="logo-container" href="{% url 'index' %}" class="brand-logo"><img src="{% static 'img/logo.png' %}" height="90px"/></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a href="{% url 'poles' %}" id="poles_nav">Pôles</a></li>
+          <li><a href="{% url 'voyages' %}" id="voyages_nav">Voyages</a></li>
+        </ul>
+
+        <a id="logo-container" href="{% url 'index' %}" class="brand-logo center"><img src="{% static 'img/logo.png' %}" height="90px"/></a>
 
         <ul class="right hide-on-med-and-down">
-          <li><a href="{% url 'poles' %}">Pôles</a></li>
-          <li><a href="{% url 'voyages' %}">Voyages</a></li>
-          <li><a href="#">Sponsors</a></li>
-          <li><a href="{% url 'challenges' %}">Défis</a></li>
+          <li><a href="{% url 'challenges' %}" id="defis_nav">Défis</a></li>
           <li><a class="modal-trigger" href="#social">Social</a></li>
         </ul>
 
