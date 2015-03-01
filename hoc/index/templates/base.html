@@ -51,6 +51,7 @@
 </div>
 
   <footer class="page-footer grey darken-4">
+    <div class="sky">
     <div class="container">
       <div class="row valign-wrapper">
         <div class="col center s12">
@@ -64,6 +65,7 @@
       Facebook et twitter
       </div>
     </div>
+  </div>
   </footer>
 
 
@@ -93,6 +95,13 @@
   });
   </script>
 
+  <script src="{% static 'plugin/jqlouds-master/dist/jquery.jqlouds.min.js' %}"></script>
+<script>
+$('footer .sky').jQlouds({
+   minClouds: 2,
+  maxClouds: 4,
+  wind: true  });
+</script>
 
   {% block script %}
   {% endblock script %}

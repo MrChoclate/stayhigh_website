@@ -19,7 +19,7 @@
     <div class="parallax"><img src="{% static 'img/group.jpg' %}" alt="Unsplashed background img 2"></div>
   </div>
 
-
+<div id="sky">
   <div class="container">
     <div class="section">
 
@@ -535,14 +535,14 @@
     </div>
   </div>
 
+</div>
 
 {% endblock content %}
 
 
 {% block script %}
-<script>
-console.log($('#bureau').offset().top);
 
+<script>
 var options = [
   {selector: '#bureau', offset: 500, callback: 'toast("Voici les plus beaux ! OMG !", 1500 )' },
   {selector: '#soiree', offset: 500, callback: 'toast("Voici les + fetards !", 1500 )' },
