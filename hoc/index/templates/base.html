@@ -30,6 +30,7 @@
           <li><a href="{% url 'voyages' %}">Voyages</a></li>
           <li><a href="#">Sponsors</a></li>
           <li><a href="{% url 'challenges' %}">Défis</a></li>
+          <li><a class="modal-trigger" href="#social">Social</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
@@ -39,6 +40,8 @@
           <li><a href="{% url 'voyages' %}">Voyages</a></li>
           <li><a href="#">Sponsors</a></li>
           <li><a href="{% url 'challenges' %}">Défis</a></li>
+          <li><a class="modal-trigger" href="#social">Social</a></li>
+
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse blue-text"><i class="mdi-navigation-menu"></i></a>
       </div>
@@ -48,6 +51,29 @@
 <div class="content">
 {% block content %}
 {% endblock content %}
+</div>
+
+
+<!-- Modal Structure -->
+<div id="social" class="modal">
+  <div class="modal-content">
+    <div class="row center">
+    <h4>Be social!</h4>
+
+      <div class="col s6 ">
+      <a href="#"><img src="{% static 'img/fb.png' %}"></a>
+      </div>
+
+      <div class="col s6">
+      <a href="#"><img src="{% static 'img/tw.png' %}"></a>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="modal-footer center">
+    <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close btn">Fermer</a>
+  </div>
 </div>
 
   <footer class="page-footer grey darken-4">
@@ -62,7 +88,7 @@
 
     <div class="footer-copyright">
       <div class="container center">
-      Facebook et twitter
+      Made in the <i class="mdi-file-cloud-queue tooltipped red-text" data-position="top" data-delay="50" data-tooltip="Cloud Power !"></i>
       </div>
     </div>
   </div>
@@ -98,9 +124,14 @@
   <script src="{% static 'plugin/jqlouds-master/dist/jquery.jqlouds.min.js' %}"></script>
 <script>
 $('footer .sky').jQlouds({
-   minClouds: 2,
-  maxClouds: 4,
+   minClouds: 3,
+  maxClouds: 5,
   wind: true  });
+
+  $(document).ready(function(){
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
 </script>
 
   {% block script %}
