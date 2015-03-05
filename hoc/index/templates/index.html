@@ -46,11 +46,72 @@
 
         <div class="col s12 m8 offset-m2 center">
         <!--<i class="mdi-image-flash-on rounded"></i>-->
-        <h3 class="blue-text" data-sr>We love you biatch!</h3>
-        <p class="flow-text" data-sr> We get to work on those ideas and projects we really want to work on, fueled by developers, designers and project managers we get to have a blast while crafting wicked cool products. </p>
-        <a class="waves-effect waves-light btn-large" href="{% url 'poles' %}"><i class="mdi-image-camera left"></i>Voir l'équipe</a>
+          <div class="card">
+              <div class="card-content">
+                <span class="card-title gold-text">We love you biatch!</span>
+                <p class="flow-text">I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a class="waves-effect waves-red btn-flat" href="{% url 'poles' %}">Voir l'équipe</a>
+              </div>
+          </div>
 
         </div>
+
+      </div>
+
+
+      <div class="row">
+
+        <div class="col m7">
+        <h4>Notre programme</h4>
+
+            <ul class="collapsible" data-collapsible="expandable">
+              <li>
+                <div class="collapsible-header active">Lundi</div>
+                <div class="collapsible-body">
+                    <ul class="programme-list">
+                      <li>
+                        <p>This is a description</p>
+                      </li>
+                      <li>
+                        <p>This is a description</p>
+                      </li>
+                      <li>
+                        <p>This is a description</p>
+                      </li>
+                      <li>
+                        <p>This is a description</p>
+                      </li>
+                      <li>
+                        <p>This is a description</p>
+                      </li>
+                    </ul>
+
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header active">Mardi</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header active">Mercredi</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+            </ul>
+        </div>
+
+        <div class="col m5">
+        <h4>Actualités twitter</h4>
+
+            <a class="twitter-timeline"  href="https://twitter.com/MyEISTI" data-widget-id="539878216526479362">Tweets de @MyEISTI</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+
+        </div>
+
+
 
       </div>
 

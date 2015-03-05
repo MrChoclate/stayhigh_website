@@ -33,10 +33,6 @@ def ChallengesList2(request):
     challenges_p = Challenge.objects.filter( type='P')
     challenges_n = Challenge.objects.filter( type='N')
 
-
-    print challenges_v
-
-
     return render_to_response(
         "challenges.html",
         {
