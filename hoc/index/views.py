@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, render_to_response
 
 from django.template import RequestContext
 
@@ -26,10 +26,27 @@ class ChallengeCreate(CreateView):
     success_url = '/thanks/'
 
 
-class ChallengesList(ListView):
-    model = Challenge
-    context_object_name = 'challenges'
-    fields = ['first_name', 'last_name', 'content',]
+
+def ChallengesList2(request):
+    challenges_v = Challenge.objects.filter( type='V')
+    challenges_r = Challenge.objects.filter( type='R')
+    challenges_p = Challenge.objects.filter( type='P')
+    challenges_n = Challenge.objects.filter( type='N')
+
+
+    print challenges_v
+
+
+    return render_to_response(
+        "challenges.html",
+        {
+            'request': request,
+            'challenges_v' : challenges_v,
+            'challenges_r' : challenges_r,
+            'challenges_p' : challenges_p,
+            'challenges_n' : challenges_n,
+        },
+        context_instance=RequestContext(request))
 
 
 def thanks(request):

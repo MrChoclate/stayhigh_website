@@ -20,7 +20,10 @@ urlpatterns = patterns('',
     url(r'^voyages$', TemplateView.as_view(template_name="voyages.html"), name='voyages'),
 
 
-    url(r'^challenges/$', ChallengesList.as_view(template_name="challenges.html"), name='challenges'),
+    #url(r'^challenges/$', ChallengesList.as_view(template_name="challenges.html"), name='challenges'),
+    url(r'^challenges/$', ChallengesList2, name='challenges'),
+
+
     url(r'^challenge/$', ChallengeCreate.as_view(template_name="challenges_new.html"), name='challenge'),
 
     url(r'^thanks/$', 'index.views.thanks', name='thanks'),

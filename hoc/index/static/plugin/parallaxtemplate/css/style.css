@@ -26,9 +26,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
+  height: 350px;
   color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
@@ -83,6 +81,7 @@ nav ul a {
     padding: 10px 15px;
     display: inline;
     color: black;
+    font-weight: bold;
 }
 
 nav ul li:hover {
@@ -199,6 +198,8 @@ i.rounded{
 
 #index-banner.index{
   padding: 50px 0 !important;
+  background-color: black;
+  color: white;
 }
 
 .mobile-logo
@@ -208,6 +209,7 @@ i.rounded{
   padding: 20px 0;
   border-bottom: 1px solid grey;
 }
+
 
 
 .parallax-container.voyages
@@ -238,4 +240,23 @@ nav{
 
 #skrollr-body {
   background:url('../../../img/bird_custom.png') repeat fixed;
+}
+
+
+.trigger-video {
+  margin-top: 30px;
+}
+
+
+#logo_lazy svg{
+  display: block;
+}
+
+.defis-tabs li span {
+  background-color: grey;
+  color: white;
+  margin-left: 3px;
+  border-radius: 50%;
+  padding: 0px 5px;
+  text-align: center;
 }

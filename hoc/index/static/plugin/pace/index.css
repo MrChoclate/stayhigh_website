@@ -12,11 +12,16 @@
 }
 
 .pace .pace-progress {
-  background: #29d;
+  background: #c19110;
   position: fixed;
   z-index: 2000;
   top: 0;
   right: 100%;
   width: 100%;
-  height: 2px;
+  height: 3px;
+}
+
+
+.pace-done nav {
+  border-top : 3px solid #c19110;
 }
