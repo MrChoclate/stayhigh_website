@@ -198,8 +198,8 @@ i.rounded{
 
 #index-banner.index{
   padding: 50px 0 !important;
-  background-color: black;
   color: white;
+  height: auto ;
 }
 
 .mobile-logo
