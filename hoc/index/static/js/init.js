@@ -117,12 +117,23 @@
     $('.slider').slider({full_width: true});
     $('.dropdown-button').dropdown({hover: false});
     $('.tab-demo').show().tabs();
-    $('.parallax').parallax();
     $('.modal-trigger').leanModal();
     $('.scrollspy').scrollSpy();
     $('.button-collapse').sideNav({'edge': 'left'});
     $('.datepicker').pickadate();
     $('select').not('.disabled').material_select();
+
+
+
+
+  $(function() {
+
+    var mq = window.matchMedia( "(min-width: 992px)" );
+    if (mq.matches) {
+      $('.parallax').parallax();
+      
+    };
+  });
 
 
   }); // end of document ready
