@@ -200,6 +200,7 @@ i.rounded{
   padding: 50px 0 !important;
   color: white;
   height: auto ;
+  background-color: black;
 }
 
 .mobile-logo
@@ -250,6 +251,12 @@ nav{
 
 #logo_lazy svg{
   display: block;
+}
+
+
+#logo_lazy {
+  display: block;
+  height: 300px;
 }
 
 .defis-tabs li span {

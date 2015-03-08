@@ -125,16 +125,5 @@
 
 
 
-
-  $(function() {
-
-    var mq = window.matchMedia( "(min-width: 992px)" );
-    if (mq.matches) {
-      $('.parallax').parallax();
-      
-    };
-  });
-
-
   }); // end of document ready
 })(jQuery); // end of jQuery name space
