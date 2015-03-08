@@ -7,7 +7,7 @@
 
   <div id="index-banner" class="index">
 
-    <div class="section pad">
+    <div class="section pad" data-start="opacity: 1" data-50-end="opacity: 0.1">
       <div class="container">
 
 
@@ -18,7 +18,8 @@
           </div>
 
           <div class="col m6 offset-m1">
-          <h1 class="header light" data-sr>Stay High</h1>
+
+          <img src="{% static 'img/stayhigh.png' %}" height="80" class="img-responsive" alt="Stay High" data-sr>
           <!--<div class="hr_index blue"></div>-->
           <h5 class="header bold" data-sr>Wake up ! Suit up ! Party !</h5>
 
@@ -52,10 +53,10 @@
       <div class="row">
 
         <div class="col s12 m8 offset-m2 center">
-        <!--<i class="mdi-image-flash-on rounded"></i>-->
+                <h4>We love you !</h4>
           <div class="card">
+
               <div class="card-content">
-                <span class="card-title gold-text">We love you !</span>
                 <p class="flow-text">Pose toi sur l'canap', ferme les yeux. Décollage.</p>
                 <p>Bienvenue à bord sur le site de la liste Stay High !</p>
                 <p>Prépare toi pour des précampagnes, campagnes et activités de folie lunaire !</p>
@@ -75,8 +76,12 @@
 
       <div class="row">
 
-        <div class="col m7">
+        <div class="col m6">
+
+        <div class="center">
+        <img src="{% static 'img/sch.png' %}">
         <h4>Notre programme</h4>
+        </div>
 
             <ul class="collapsible" data-collapsible="expandable">
               <li>
@@ -110,8 +115,12 @@
             </ul>
         </div>
 
-        <div class="col m5">
+        <div class="col m6">
+
+        <div class="center">
+        <img src="{% static 'img/twit.png' %}">
         <h4>Actualités twitter</h4>
+        </div>
 
             <a class="twitter-timeline"  href="https://twitter.com/MyEISTI" data-widget-id="539878216526479362">Tweets de @MyEISTI</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -131,7 +140,7 @@
   </div>
 </div>
 
-  <div class="parallax-container valign-wrapper" style="height: 600px">
+  <div class="parallax-container valign-wrapper" style="height: 500px">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -152,14 +161,44 @@
 
 
       <div class="row">
-        <div class="col s12 m8 offset-m2">
+        <div class="col s12 m8">
           <div class="card-panel center">
               <h4 class="blue-text gold-text" data-sr>SOS Crêpes !</h4>
               <p class="flow-text" data-sr>Vous avez faim ? Vous êtes en cours de maths et vous en avez marre de toutes ces formules trop saoûlante ? A moins que votre réveil soit un peu trop difficile pour vous ? Alors attrapez vos téléphones tout de suite et branchez vous sur le SOS CRÊPES !</p>
-              <h1><a class="gold-text" href="tel:+33123456789">01 23 45 67 89</a></h1>
-              <h2>SnapChat : <span class="gold-text">stay.highEisti</span></h2>
           </div>
         </div>
+
+
+        <div class="col s12 m4" data-sr>
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row info valign-wrapper">
+              <div class="col s4">
+                <img src="{% static 'img/phone.png' %}" alt="eza" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </div>
+              <div class="col s8">
+                <span class="black-text">
+                  <p class="flow-text">stay.highEisti</p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-panel grey lighten-5 z-depth-1" data-sr>
+            <div class="row info valign-wrapper">
+              <div class="col s4">
+                <img src="{% static 'img/snap.png' %}" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </div>
+              <div class="col s8">
+                <span class="black-text">
+                  <p class="flow-text"><a href="tel:+33123456789">01 23 45 67 89</a></p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
       </div>
 
 
@@ -445,7 +484,7 @@ var pathObj = {
     "strokeWidth": 3,
     "strokeColor": "#fff",
     'responsive': true,
-    'speedMultiplier' : 0.1,
+    'speedMultiplier' : 0.6,
 }).lazylinepainter('paint'); 
  });
 

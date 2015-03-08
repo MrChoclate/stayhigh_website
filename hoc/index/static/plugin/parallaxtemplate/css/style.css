@@ -284,3 +284,13 @@ nav{
 .gold-text {
   color: #C19110 !important;
 }
+
+.btn:hover, .btn-large:hover {
+    background-color: #ffa000 ;
+}
+
+
+.row.info {
+  margin-bottom: 0px;
+}
+

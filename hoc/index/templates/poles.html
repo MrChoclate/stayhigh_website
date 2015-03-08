@@ -4,7 +4,7 @@
 
 {% block content %}
   <div id="index-banner" class="parallax-container" >
-    <div class="section no-pad-bot">
+    <div class="section no-pad-bot" data-start="opacity: 1" data-300="opacity: 0" >
       <div class="container">
         <br><br>
         <h1 class="header center">Les Pôles</h1>
@@ -544,14 +544,9 @@
 
 {% block script %}
 
-<script src="{% static 'plugin/skrollr-master/dist/skrollr.min.js' %}"></script>
-
 <script type="text/javascript">
 $('nav #poles_nav').addClass('active');
 
-skrollr.init({
-  forceHeight: false
-});
 </script>
 
 <script>
