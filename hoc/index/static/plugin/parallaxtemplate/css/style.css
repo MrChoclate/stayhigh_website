@@ -261,7 +261,9 @@ nav{
   text-align: center;
 }
 
-
+.gold {
+  background-color: #C19110;
+}
 .gold-text {
   color: #C19110 !important;
 }
