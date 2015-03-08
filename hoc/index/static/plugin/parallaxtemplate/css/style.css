@@ -26,7 +26,7 @@ p {
 }
 
 .parallax-container {
-  height: 350px;
+  height: 400px;
   color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
@@ -160,7 +160,6 @@ z-index:0;
 }*/
 
 #index-banner {
-  /*box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);*/
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
 }
 
@@ -209,7 +208,7 @@ i.rounded{
   color: white;
   height: auto ;
   background-color: black;
-  background: url('../../../img/3.jpg') no-repeat center fixed;
+  background: url('../../../img/noir.jpg') no-repeat center fixed black;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover;
 }
