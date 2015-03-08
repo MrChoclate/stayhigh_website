@@ -1,0 +1,2 @@
+django
+django-materializecss-form==0.0.64

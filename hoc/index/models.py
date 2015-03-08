@@ -3,6 +3,18 @@
 
 from django.db import models
 
+['first_name', 'last_name', 'nombre', 'salle']
+
+
+class CrepeCommande(models.Model):
+    first_name = models.CharField("Prénom", max_length=30, blank=False)
+    last_name = models.CharField("Nom", max_length=30, blank=False)
+    nombre = models.CharField("Nombre de crêpes", max_length=30, blank=False)
+    salle = models.CharField("Votre lieu de livraison", max_length=30, blank=False)
+
+    def __unicode__(self):
+        return self.first_name + self.last_name + self.nombre
+
 class Challenge(models.Model):
     first_name = models.CharField("Prénom", max_length=30, blank=True)
     last_name = models.CharField("Nom", max_length=30, blank=True)

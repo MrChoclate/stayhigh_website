@@ -1,7 +1,7 @@
 *.pyc
 *.sqlite
 write/static/data/*
-index/migrations/*
+
 .codeintel/*
 *.sqlite.old
 *.sublime-project

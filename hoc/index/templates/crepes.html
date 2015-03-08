@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load materializecss %}
+
+{% block content %}
+  <div id="index-banner" class="parallax-container challenges">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text">Commander des crêpes</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Livraison par hibou</h5>
+        </div>
+
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'img/crepes.jpg' %}" alt="Unsplashed background img 2"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+        <div class="row">
+          <div class="col s12 m8 offset-m2">
+            <div class="card-panel white">
+              <span class="center">
+                        <form action="" method="post">
+                          {% csrf_token %}
+                          {{form|materializecss}}
+
+                          <button class="btn waves-effect waves-light blue darken-2" type="submit" name="action">Envoyer
+                            <i class="mdi-content-send right"></i>
+                          </button>
+
+                        </form>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      <div class="row">
+        <div class="col s12 center">
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+{% endblock content %}
+
+
+{% block script %}
+{% endblock %}

@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% load materializecss %}
 
 {% block content %}
 
@@ -195,6 +196,13 @@
               </div>
             </div>
           </div>
+
+
+          <div class="center" data-sr>
+          <a class="waves-effect waves-light btn modal-trigger btn-large gold darken-3" href="{% url 'crepes' %}"> Via notre site</a>
+          </div>
+
+
 
         </div>
 
