@@ -138,12 +138,13 @@
 
   <script src="{% static 'plugin/jqlouds-master/dist/jquery.jqlouds.min.js' %}"></script>
 <script src="{% static 'plugin/skrollr-master/dist/skrollr.min.js' %}"></script>
-  
+
   
 <script>
 
 skrollr.init({
-  forceHeight: false
+  forceHeight: false,
+  mobileCheck:function() {return false}
 });
 
 
