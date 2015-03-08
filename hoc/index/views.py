@@ -14,7 +14,6 @@ from django.core.urlresolvers import reverse_lazy, reverse
 
 from django.contrib import messages
 
-from django.contrib.auth.decorators import login_required
 
 
 
@@ -26,22 +25,6 @@ class ChallengeCreate(CreateView):
     fields = ['first_name', 'last_name', 'content',]
     success_url = '/thanks/'
 
-class CrepeCommande(CreateView):
-    model = CrepeCommande
-    fields = ['first_name', 'last_name', 'nombre', 'salle']
-    success_url = '/thanks/crepes'
-
-
-
-@login_required
-def crepes_admin(request):
-
-    return render_to_response(
-        "crepes_admin.html",
-        {
-            'request': request,
-        },
-        context_instance=RequestContext(request))
 
 
 def ChallengesList2(request):
@@ -65,8 +48,3 @@ def ChallengesList2(request):
 def thanks(request):
     messages.add_message(request, messages.INFO, 'Merci pour votre défi')
     return redirect('challenges')
-
-
-def thanks_crepes(request):
-    messages.add_message(request, messages.INFO, 'Votre commande a bien été prise en compte')
-    return redirect('index')

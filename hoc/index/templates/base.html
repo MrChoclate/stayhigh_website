@@ -43,9 +43,6 @@
           <li><a href="{% url 'voyages' %}">Voyages</a></li>
           <li><a href="{% url 'challenges' %}">Défis</a></li>
           <li><a class="modal-trigger" href="#social">Social</a></li>
-          {% if user.is_authenticated %}
-          <li><a href="{% url 'crepes_admin' %}">Admin crepes</a></li>
-          {% endif %}
 
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse blue-text"><i class="mdi-navigation-menu"></i></a>
