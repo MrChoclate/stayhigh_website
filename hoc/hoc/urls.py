@@ -17,6 +17,8 @@ urlpatterns = patterns('',
 
     url(r'^crepes_admin$', 'index.views.crepes_admin', name='crepes_admin'),
 
+    url(r'^captcha/', include('captcha.urls')),
+
 
     url(r'^crepes$', CrepeCommande.as_view(template_name="crepes.html"), name='crepes'),
     url(r'^thanks/crepes$', 'index.views.thanks_crepes', name='thanks_crepes'),

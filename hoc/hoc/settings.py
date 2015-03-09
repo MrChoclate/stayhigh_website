@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'materializecssform', #best package ever !
     'index',
+    'captcha',
 )
 
 MIDDLEWARE_CLASSES = (
