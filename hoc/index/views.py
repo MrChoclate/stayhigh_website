@@ -16,13 +16,22 @@ from django.contrib import messages
 
 
 
+from captcha.fields import CaptchaField
+ 
+from django.forms import ModelForm
 
+class ChallengeCreateForm(ModelForm):
+   captcha = CaptchaField()
+
+   class Meta:
+       model = Challenge
+       fields = ['first_name', 'last_name', 'content', 'captcha']
 
 
 
 class ChallengeCreate(CreateView):
+    form_class = ChallengeCreateForm
     model = Challenge
-    fields = ['first_name', 'last_name', 'content',]
     success_url = '/thanks/'
 
 

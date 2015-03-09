@@ -17,6 +17,8 @@ urlpatterns = patterns('',
 
     url(r'^poles$', TemplateView.as_view(template_name="poles.html"), name='poles'),
 
+    url(r'^captcha/', include('captcha.urls')),
+
     url(r'^voyages$', TemplateView.as_view(template_name="voyages.html"), name='voyages'),
 
 
