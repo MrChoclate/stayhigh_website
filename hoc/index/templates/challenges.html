@@ -63,7 +63,7 @@
 
             <div id="nonlu" class="col s12">
               <ul class="collection with-header">
-                  <li class="collection-header"><h4 class="center-align">Non lu{{challenges_n|pluralize}}</h4></li>
+                  <li class="collection-header"><h4 class="center-align">Proposé{{challenges_n|pluralize}}</h4></li>
 
                   {% for challenge in challenges_n reversed %}
                     <li class="collection-item">{{challenge.content}} {% if challenge.first_name or challenge.last_name %} par {{challenge.first_name}} {{challenge.last_name}} {% endif %}</li>
