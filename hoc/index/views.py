@@ -16,10 +16,6 @@ from django.contrib import messages
 
 
 
-
-
-
-
 class ChallengeCreate(CreateView):
     model = Challenge
     fields = ['first_name', 'last_name', 'content',]

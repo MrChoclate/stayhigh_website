@@ -39,8 +39,8 @@
                   <ul class="collection with-header">
                     <li class="collection-header"><h4 class="center-align">Défi{{challenges_v|pluralize}} Validé{{challenges_v|pluralize}}</h4></li>
 
-                    {% for challenge in challenges_v %}
-                    <li class="collection-item">{{challenge.content}} {% if challenge.first_name or challenge.last_name %} par {{challenge.first_name}} {{challenge.last_name}} {% endif %}</li>
+                    {% for challenge in challenges_v reversed %}
+                    <li class="collection-item">{{challenge.content}} {{challenge.proof |safe}} {% if challenge.first_name or challenge.last_name %} par {{challenge.first_name}} {{challenge.last_name}} {% endif %} {% if challenge.url_proof %}<a class="tooltipped secondary-content" {% if challenge.type_proof %} data-position="top" data-delay="50" data-tooltip="{{challenge.type_proof}}"{% endif %} href="{{challenge.url_proof}}"><i class="mdi-content-send"></i></a>{% endif %}</li>
                     {% empty %}
                   <li class="collection-item">Aucun défi</li>
                     {% endfor %}
@@ -52,7 +52,7 @@
               <ul class="collection with-header">
                   <li class="collection-header"><h4 class="center-align">En cours</h4></li>
 
-                  {% for challenge in challenges_p %}
+                  {% for challenge in challenges_p reversed %}
                     <li class="collection-item">{{challenge.content}} {% if challenge.first_name or challenge.last_name %} par {{challenge.first_name}} {{challenge.last_name}} {% endif %}</li>
                   {% empty %}
                   <li class="collection-item">Aucun défi</li>
@@ -65,7 +65,7 @@
               <ul class="collection with-header">
                   <li class="collection-header"><h4 class="center-align">Non lu{{challenges_n|pluralize}}</h4></li>
 
-                  {% for challenge in challenges_n %}
+                  {% for challenge in challenges_n reversed %}
                     <li class="collection-item">{{challenge.content}} {% if challenge.first_name or challenge.last_name %} par {{challenge.first_name}} {{challenge.last_name}} {% endif %}</li>
                   {% empty %}
                   <li class="collection-item">Aucun défi</li>

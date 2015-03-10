@@ -6,10 +6,13 @@ from django.views.generic import TemplateView
 from index.views import *
 
 
+
+
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'hoc.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
+
 
     url(r'^admin/', include(admin.site.urls)),
 
