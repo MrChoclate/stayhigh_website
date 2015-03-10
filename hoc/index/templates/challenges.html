@@ -40,7 +40,7 @@
                     <li class="collection-header"><h4 class="center-align">Défi{{challenges_v|pluralize}} Validé{{challenges_v|pluralize}}</h4></li>
 
                     {% for challenge in challenges_v reversed %}
-                    <li class="collection-item">{{challenge.content}} {{challenge.proof |safe}} {% if challenge.first_name or challenge.last_name %} par {{challenge.first_name}} {{challenge.last_name}} {% endif %} {% if challenge.url_proof %}<a class="tooltipped secondary-content" {% if challenge.type_proof %} data-position="top" data-delay="50" data-tooltip="{{challenge.type_proof}}"{% endif %} href="{{challenge.url_proof}}"><i class="mdi-content-send"></i></a>{% endif %}</li>
+                    <li class="collection-item">{{challenge.content}} {{challenge.proof |safe}} {% if challenge.first_name or challenge.last_name %} par {{challenge.first_name}} {{challenge.last_name}} {% endif %} {% if challenge.url_proof %}<a class=" {% if challenge.type_proof %} tooltipped {% endif %} secondary-content" {% if challenge.type_proof %} data-position="top" data-delay="50" data-tooltip="{{challenge.type_proof}}"{% endif %} href="{{challenge.url_proof}}"><i class="mdi-content-send"></i></a>{% endif %}</li>
                     {% empty %}
                   <li class="collection-item">Aucun défi</li>
                     {% endfor %}
